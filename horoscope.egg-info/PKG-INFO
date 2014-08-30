@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: horoscope
+Version: 0.1.0
+Summary: Fetches and parses data from Ganeshaspeaks.
+Home-page: https://github.com/tapasweni-pathak/pyhoroscope
+Author: Tapasweni Pathak
+Author-email: tapaswenipathak@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

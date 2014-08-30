@@ -1,0 +1,43 @@
+=====
+horoscope
+=====
+
+A Python module to fetch and parse data from Ganeshaspeaks.
+
+Installation
+============
+
+Install using pip:
+
+    pip install horoscope
+
+Usage
+=====
+
+    from horoscope import Horoscope
+
+    your_horoscope = Horoscope.get_todays_horoscope ('Libra')
+    
+    #do stuff with the parsed data
+    your_horoscope['date']
+    your_horoscope['sunsign']
+    your_horoscope['horscope']
+
+
+Features
+========
+
+Currently implemented
+---------------------
+
+* Today's Horscope
+
+
+Todo
+----
+
+* More information about a sunsign
+
+* Current month horoscope
+
+* Current year horoscope

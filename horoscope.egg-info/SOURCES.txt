@@ -1,0 +1,9 @@
+README
+setup.py
+horoscope/__init__.py
+horoscope/pyhoroscope.py
+horoscope.egg-info/PKG-INFO
+horoscope.egg-info/SOURCES.txt
+horoscope.egg-info/dependency_links.txt
+horoscope.egg-info/requires.txt
+horoscope.egg-info/top_level.txt
