@@ -1,6 +1,6 @@
 # horoscope
 
-A Python module to fetch and parse data from GaneshaSpeaks.
+A Python module to fetch and parse data from [GaneshaSpeaks] (http://www.ganeshaspeaks.com/).
 
 ### Projects built using pyhoroscope
 * [`horoscope-api`](https://github.com/tapasweni-pathak/horoscope-api) – A REST API to get horscope from GaneshaSpeaks.
