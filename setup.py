@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='horoscope',
-    version='0.1.0',
+    version='0.1.1',
     description='Fetches and parses data from Ganeshaspeaks.',
     author='Tapasweni Pathak',
     author_email='tapaswenipathak@gmail.com',

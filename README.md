@@ -1,6 +1,6 @@
 # horoscope
 
-A Python module to fetch and parse data from [GaneshaSpeaks] (http://www.ganeshaspeaks.com/).
+A Python module to fetch and parse data from GaneshaSpeaks.
 
 ### Projects built using pyhoroscope
 * [`horoscope-api`](https://github.com/tapasweni-pathak/horoscope-api) – A REST API to get horscope from GaneshaSpeaks.
@@ -30,10 +30,16 @@ your_horoscope['horoscope']
 
 ## Features
 ### Currently implemented
-* Today's Horscope
+* Today's Horscope 
+* Weekly Horoscope
+* Monthly Horoscope
+* Yearly Horoscope
+* Know More About a Sunsign
+    breaked down into  sanskrit name, meaning_of_name, lord, lucky_color, lucky_day and lucky_number.
 
 
 ### Todo
-* More information about a sunsign
-* Current month horoscope
-* Current year horoscope
+* Personality Profile 
+* Facts About a Sunsign
+* Practical Side of a Sunsign
+* Astrological Perspective of a Sunsign
