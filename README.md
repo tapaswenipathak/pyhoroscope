@@ -7,7 +7,8 @@ A Python module to fetch and parse data from GaneshaSpeaks.
 
 
 ## Installation
-You will need [Python 2](https://www.python.org/download/). [pip](http://pip.readthedocs.org/en/latest/installing.html) is recommended for installing dependencies.
+* You will need [Python 2](https://www.python.org/download/). 
+* [pip](http://pip.readthedocs.org/en/latest/installing.html) is recommended for installing dependencies.
 
 Install using pip:
 
