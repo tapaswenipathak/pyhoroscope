@@ -44,3 +44,8 @@ your_horoscope['horoscope']
 * Facts About a Sunsign
 * Practical Side of a Sunsign
 * Astrological Perspective of a Sunsign
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/tapasweni-pathak/pyhoroscope/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
+
+
