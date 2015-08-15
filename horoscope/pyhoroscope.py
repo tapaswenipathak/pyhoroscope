@@ -1,6 +1,7 @@
 import urllib2
 from bs4 import BeautifulSoup
-import re
+from lxml import etree
+import ast
 
 
 ####################################################################
@@ -53,21 +54,26 @@ class Horoscope:
     @staticmethod
     def know_all_about(sunsign):
         url = "http://www.ganeshaspeaks.com/" + sunsign + ".action"
-        html_doc = urllib2.urlopen(url)
-        soup = BeautifulSoup(html_doc.read())
-        raw_data = str(soup.find_all('p', {'class': 'nrmltxt'}))
-        soup = BeautifulSoup(raw_data)
-        sanskrit_name = soup.find_all('em')[0].get_text()
-        meaning_of_name = soup.find_all('em')[1].get_text()
-        lord = soup.find_all('em')[3].get_text()
-        lucky_color = soup.find_all('em')[4].get_text()
-        lucky_day = soup.find_all('em')[5].get_text()
-        lucky_number = soup.find_all('em')[6].get_text()
+        response = urllib2.urlopen(url)
+        htmlparser = etree.HTMLParser()
+        tree = etree.parse(response, htmlparser)
+        sanskrit_name = str(tree.xpath("/html/body/div/div/div[4]/section[4]/div/div/div[1]/p/text()[2]"))
+        sanskrit_name = sanskrit_name.replace("[\' : ", "").replace(" |\\n\']", "")
+        meaning_of_name = str(tree.xpath("/html/body/div/div/div[4]/section[4]/div/div/div[1]/p/text()[3]"))
+        meaning_of_name = meaning_of_name.replace("[\' : ", "").replace(" |\\n\']", "")
+        lord = str(tree.xpath("/html/body/div/div/div[4]/section[4]/div/div/div[1]/p/text()[5]"))
+        lord = lord.replace("[\' : ", "").replace(" |\\n\']", "")
+        Type = str(tree.xpath("/html/body/div/div/div[4]/section[4]/div/div/div[1]/p/text()[4]"))
+        Type = Type.replace("[\' : ", "").replace(" |\\n\']", "")
+        lucky_day = str(tree.xpath("/html/body/div/div/div[4]/section[4]/div/div/div[1]/p/text()[6]"))
+        lucky_day = lucky_day.replace("[\' : ", "").replace(" |\\n\']", "")
+        lucky_number = str(tree.xpath("/html/body/div/div/div[4]/section[4]/div/div/div[1]/p/text()[7]"))
+        lucky_number = lucky_number.replace("[\' : ", "").replace("\\n']", "")
         dict = {
             'sanskrit_name': sanskrit_name,
             'meaning_of_name': meaning_of_name,
             'lord': lord,
-            'lucky_color': lucky_color,
+            'type': Type,
             'lucky_day': lucky_day,
             'lucky_number': lucky_number,
         }
@@ -147,3 +153,4 @@ class Horoscope:
         }
 
         return dict
+
