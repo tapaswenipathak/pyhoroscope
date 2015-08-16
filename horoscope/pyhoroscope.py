@@ -57,17 +57,25 @@ class Horoscope:
         response = urllib2.urlopen(url)
         htmlparser = etree.HTMLParser()
         tree = etree.parse(response, htmlparser)
-        sanskrit_name = str(tree.xpath("/html/body/div/div/div[4]/section[4]/div/div/div[1]/p/text()[2]"))
-        sanskrit_name = sanskrit_name.replace("[\' : ", "").replace(" |\\n\']", "")
-        meaning_of_name = str(tree.xpath("/html/body/div/div/div[4]/section[4]/div/div/div[1]/p/text()[3]"))
-        meaning_of_name = meaning_of_name.replace("[\' : ", "").replace(" |\\n\']", "")
-        lord = str(tree.xpath("/html/body/div/div/div[4]/section[4]/div/div/div[1]/p/text()[5]"))
+        sanskrit_name = str(tree.xpath(
+            "/html/body/div/div/div[4]/section[4]/div/div/div[1]/p/text()[2]"))
+        sanskrit_name = sanskrit_name.replace(
+            "[\' : ", "").replace(" |\\n\']", "")
+        meaning_of_name = str(tree.xpath(
+            "/html/body/div/div/div[4]/section[4]/div/div/div[1]/p/text()[3]"))
+        meaning_of_name = meaning_of_name.replace(
+            "[\' : ", "").replace(" |\\n\']", "")
+        lord = str(tree.xpath(
+            "/html/body/div/div/div[4]/section[4]/div/div/div[1]/p/text()[5]"))
         lord = lord.replace("[\' : ", "").replace(" |\\n\']", "")
-        Type = str(tree.xpath("/html/body/div/div/div[4]/section[4]/div/div/div[1]/p/text()[4]"))
+        Type = str(tree.xpath(
+            "/html/body/div/div/div[4]/section[4]/div/div/div[1]/p/text()[4]"))
         Type = Type.replace("[\' : ", "").replace(" |\\n\']", "")
-        lucky_day = str(tree.xpath("/html/body/div/div/div[4]/section[4]/div/div/div[1]/p/text()[6]"))
+        lucky_day = str(tree.xpath(
+            "/html/body/div/div/div[4]/section[4]/div/div/div[1]/p/text()[6]"))
         lucky_day = lucky_day.replace("[\' : ", "").replace(" |\\n\']", "")
-        lucky_number = str(tree.xpath("/html/body/div/div/div[4]/section[4]/div/div/div[1]/p/text()[7]"))
+        lucky_number = str(tree.xpath(
+            "/html/body/div/div/div[4]/section[4]/div/div/div[1]/p/text()[7]"))
         lucky_number = lucky_number.replace("[\' : ", "").replace("\\n']", "")
         dict = {
             'sanskrit_name': sanskrit_name,
@@ -153,4 +161,3 @@ class Horoscope:
         }
 
         return dict
-
