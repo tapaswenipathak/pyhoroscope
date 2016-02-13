@@ -73,14 +73,14 @@ class Horoscope:
         response = urllib2.urlopen(url)
         htmlparser = etree.HTMLParser()
         tree = etree.parse(response, htmlparser)
-        date = str(tree.xpath(
+        week = str(tree.xpath(
             "//*[@id=\"main-wrapper\"]/div/div/div[2]/section/div[2]/div/div/h3/span/text()"))
-        date = date.replace("[u'\\n", "").replace("']", "").replace("\\u2013", "-")
+        week = week.replace("[u'\\n", "").replace("']", "").replace("\\u2013", "-")
         horoscope = str(tree.xpath(
             "//*[@id=\"main-wrapper\"]/div/div/div[2]/section/div[2]/div/div/span/text()"))
         horoscope = horoscope.replace("['", "").replace("']", "")
         dict = {
-            'date': date,
+            'week': week,
             'horoscope': horoscope,
             'sunsign': sunsign
         }
@@ -94,14 +94,14 @@ class Horoscope:
         response = urllib2.urlopen(url)
         htmlparser = etree.HTMLParser()
         tree = etree.parse(response, htmlparser)
-        date = str(tree.xpath(
+        month = str(tree.xpath(
             "//*[@id=\"main-wrapper\"]/div/div/div[2]/section/div[2]/div/div/h3/span/text()"))
-        date = date.replace("['\\n", "").replace("']", "")
+        month = month.replace("['\\n", "").replace("']", "")
         horoscope = str(tree.xpath(
             "//*[@id=\"main-wrapper\"]/div/div/div[2]/section/div[2]/div/div/span/text()[1]"))
         horoscope = horoscope.replace("['", "").replace("']", "")
         dict = {
-            'date': date,
+            'month': month,
             'horoscope': horoscope,
             'sunsign': sunsign
         }
@@ -115,14 +115,14 @@ class Horoscope:
         response = urllib2.urlopen(url)
         htmlparser = etree.HTMLParser()
         tree = etree.parse(response, htmlparser)
-        date = str(tree.xpath(
+        year = str(tree.xpath(
             "//*[@id=\"main-wrapper\"]/div/div/div[2]/section/div[2]/div/div/h3/span/text()"))
-        date = date.replace("['\\n", "").replace("']", "")
+        year = year.replace("['\\n", "").replace("']", "")
         horoscope = str(tree.xpath(
             "//*[@id=\"main-wrapper\"]/div/div/div[2]/section/div[2]/div/div/span/text()"))
         horoscope = horoscope.replace("[u'", "").replace("']", "").replace("\\xe2\\x80\\x99s", "")
         dict = {
-            'date': date,
+            'year': year,
             'horoscope': horoscope,
             'sunsign': sunsign
         }
