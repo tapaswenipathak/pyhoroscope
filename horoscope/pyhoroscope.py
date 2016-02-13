@@ -6,12 +6,6 @@ import re
 # API
 ####################################################################
 
-
-'''
-If something breaks, give below error message.
-'''
-ERROR_MESSAGE = "Couldn't retrieve data, We are working to fix this."
-
 class Horoscope:
 
     @staticmethod
