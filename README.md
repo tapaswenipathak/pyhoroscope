@@ -35,8 +35,6 @@ your_horoscope['horoscope']
 * Weekly Horoscope
 * Monthly Horoscope
 * Yearly Horoscope
-* Know More About a Sunsign
-    breaked down into  sanskrit name, meaning_of_name, lord, lucky_color, lucky_day and lucky_number.
 
 
 ### Todo
