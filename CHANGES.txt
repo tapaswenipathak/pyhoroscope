@@ -1,3 +1,5 @@
 v0.1.0, 30th August 2014 -- Initial release.
 v0.1.1, 1st September 2014 -- Added weekly, monthly, yearly horscope and more info about a sunsign.
 v0.1.2, 16th August 2015 -- Fixes as Ganeshaspeaks is restrcutred.
+v1.0.1, 13th Feburary 2015 -- Fixes as Ganeshaspeaks is restructured. Does not use Beautiful Soup.
+
