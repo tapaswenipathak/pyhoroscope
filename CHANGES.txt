@@ -4,3 +4,4 @@ v0.1.2, 16th August 2015 -- Fixes as Ganeshaspeaks is restrcutred.
 v1.0.1, 13th Feburary 2016 -- Fixes as Ganeshaspeaks is restructured. Does not use Beautiful Soup.
 v1.0.2, 28th May 2016 -- Fixes as Ganeshaspeaks is restructured. No know_all_about feature now.
 v1.0.3, 1st September 2016 -- Minor fixes as website is restructured.
+v1.0.4, 2nd April 2017 -- Minor fixes as website is restructured.
