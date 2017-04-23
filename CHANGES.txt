@@ -5,3 +5,4 @@ v1.0.1, 13th Feburary 2016 -- Fixes as Ganeshaspeaks is restructured. Does not u
 v1.0.2, 28th May 2016 -- Fixes as Ganeshaspeaks is restructured. No know_all_about feature now.
 v1.0.3, 1st September 2016 -- Minor fixes as website is restructured.
 v1.0.4, 2nd April 2017 -- Minor fixes as website is restructured.
+v1.0.5, 23rd April 2017 -- Minor fixes as website is restructured.
