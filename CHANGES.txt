@@ -6,3 +6,5 @@ v1.0.2, 28th May 2016 -- Fixes as Ganeshaspeaks is restructured. No know_all_abo
 v1.0.3, 1st September 2016 -- Minor fixes as website is restructured.
 v1.0.4, 2nd April 2017 -- Minor fixes as website is restructured.
 v1.0.5, 23rd April 2017 -- Minor fixes as website is restructured.
+v1.0.6, 29th June 2017 -- Minor fixes as website is restructured.
+v1.0.7, 5th July 2017 -- Minor fixes as website is restructured.
