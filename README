@@ -17,7 +17,7 @@ Usage
     from horoscope import Horoscope
 
     your_horoscope = Horoscope.get_todays_horoscope ('Libra')
-    
+
     #do stuff with the parsed data
     your_horoscope['date']
     your_horoscope['sunsign']
@@ -31,7 +31,7 @@ Currently implemented
 ---------------------
 
 * Today's Horscope
-* Weekly Horoscope 
+* Weekly Horoscope
 * Monthly Horoscope
 * Yearly Horoscope
 
